@@ -233,10 +233,12 @@ void loop() {
 //3:25
 //4:kaputt
 //Relais:
-//unbekannt:
-//bildschirm_links:32
-//bildschrim_rechts:26
+//leer: 22, 24
+//bildschirm_links:26
+//bildschrim_rechts:36
+//bilderschirm_oben:30
 //Lautsprecher:28
+//Alexa:32
 void checkPanel(){
   bool tmp_save = switch1;
   switch1 = !digitalRead(31);
@@ -247,20 +249,14 @@ void checkPanel(){
   }
   switch2 = !digitalRead(23);
   switch3 = !digitalRead(25);
-  //haupt an
+  //digitalWrite(22,switch3 ? HIGH : LOW);
+  //digitalWrite(24,switch3 ? HIGH : LOW);
   digitalWrite(26,switch3 ? HIGH : LOW);
-  digitalWrite(32,switch3 ? HIGH : LOW);
-
-  digitalWrite(22,switch3 ? HIGH : LOW);
-  digitalWrite(24,switch3 ? HIGH : LOW);
-  digitalWrite(28,switch3 ? HIGH : LOW);
+  //digitalWrite(28,switch3 ? HIGH : LOW);
   digitalWrite(30,switch3 ? HIGH : LOW);
-  digitalWrite(34,switch3 ? HIGH : LOW);
+  //digitalWrite(32,switch3 ? HIGH : LOW);
+  //digitalWrite(34,switch3 ? HIGH : LOW);
   digitalWrite(36,switch3 ? HIGH : LOW);
-  //digitalWrite(26,switch2);
-  //digitalWrite(28,switch2);
-  //Lautsprecher
-  //digitalWrite(28,switch3);
 }
 
 void checkBLE()
