@@ -353,7 +353,7 @@ void checkSerial()
     // }
     // mode = command.toInt();
   // }
-  if(Serial.available() >= 1){
+  if(Serial.available() >= 1 && switch1){
     equalizer_value = Serial.read();
     if(mode != 21){
       setAll(0,0,0);
