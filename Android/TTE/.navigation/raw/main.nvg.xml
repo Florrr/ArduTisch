@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.navigation.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "at.tte.emgtec.tte.login_Activity">
+        <location        
+          id = "point0"        
+          x = "0"        
+          y = "0"/>
+      </key>
+      <value      
+        x = "500"      
+        y = "100"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "statistics_">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "1768"      
+        y = "7000"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "at.tte.emgtec.tte.MyActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "500"      
+        y = "2860"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "my">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "1768"      
+        y = "2860"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "at.tte.emgtec.tte.exercise2_Activity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "500"      
+        y = "4240"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "login_">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "1760"      
+        y = "320"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "at.tte.emgtec.tte.exercise1_Activity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "500"      
+        y = "1480"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "exercise2_">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "1768"      
+        y = "4240"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "at.tte.emgtec.tte.breakout_Activity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "500"      
+        y = "8380"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "exercise1_">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "1768"      
+        y = "1480"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "max_power_test">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "1768"      
+        y = "5620"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "at.tte.emgtec.tte.statistics_Activity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "500"      
+        y = "7000"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+  </locations>
+</navigationModel>

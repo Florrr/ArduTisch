@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="at.tte.emgtec.tte.maxPowerTest">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInf"
+        android:text="Strain your muscle as hard as you can."
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/textInf"
+        android:id="@+id/imageMaxPwrDiag"
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

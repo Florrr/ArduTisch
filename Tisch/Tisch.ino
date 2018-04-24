@@ -234,29 +234,31 @@ void loop() {
 //4:kaputt
 //Relais:
 //leer: 22, 24
-//bildschirm_links:26
+//bildschirm_links:32
 //bildschrim_rechts:36
 //bilderschirm_oben:30
 //Lautsprecher:28
-//Alexa:32
+//Alexa:?
 void checkPanel(){
   bool tmp_save = switch1;
   switch1 = !digitalRead(31);
   if(tmp_save == false && switch1 == true){
     firststart = true;
+    mode = 22;
   }else if(tmp_save == true && switch1 == false){
     fadeoutlight = true;
   }
   switch2 = !digitalRead(23);
   switch3 = !digitalRead(25);
-  //digitalWrite(22,switch3 ? HIGH : LOW);
-  //digitalWrite(24,switch3 ? HIGH : LOW);
-  digitalWrite(26,switch3 ? HIGH : LOW);
-  //digitalWrite(28,switch3 ? HIGH : LOW);
-  digitalWrite(30,switch3 ? HIGH : LOW);
-  //digitalWrite(32,switch3 ? HIGH : LOW);
+  //digitalWrite(22,switch2 ? HIGH : LOW);
+  //digitalWrite(24,switch2 ? HIGH : LOW);
+  //digitalWrite(26,switch2 ? HIGH : LOW);
+  
+  digitalWrite(28,switch3 ? HIGH : LOW);
+  digitalWrite(30,switch2 ? HIGH : LOW);
+  digitalWrite(32,switch2 ? HIGH : LOW);
   //digitalWrite(34,switch3 ? HIGH : LOW);
-  digitalWrite(36,switch3 ? HIGH : LOW);
+  digitalWrite(36,switch2 ? HIGH : LOW);
 }
 
 void checkBLE()
